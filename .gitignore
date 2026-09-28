@@ -1,0 +1,12 @@
+.env*
+!.env.example
+node_modules/
+.next/
+.next-whatsapp/
+out/
+.vercel/
+test-results/
+playwright-report/
+*.tsbuildinfo
+supabase/.temp/
+supabase/.branches/

@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "151-booster-bundle",
+    "name": "Cardnest TCG-151 Booster Bundle (6 Factory-Sealed Packs)",
+    "category": "Booster Bundles",
+    "set_name": "Scarlet & Violet—151",
+    "pack_count": 6,
+    "price_pence": 4500,
+    "compare_at_pence": 6500,
+    "summary": "Six Scarlet & Violet—151 booster packs. Packaging, condition and availability require confirmation.",
+    "source_url": "https://cardnest-tcg.co.uk/product/cardnest-tcg-151-booster-bundle-6-factory-sealed-packs/",
+    "image_path": "/products/151-booster-bundle.png",
+    "status": "draft"
+  },
+  {
+    "slug": "black-bolt-booster-bundle",
+    "name": "Cardnest TCG-Black Bolt Booster Bundle (6 Factory-Sealed Packs)",
+    "category": "Booster Bundles",
+    "set_name": "Scarlet & Violet—Black Bolt",
+    "pack_count": 6,
+    "price_pence": 5000,
+    "compare_at_pence": 7000,
+    "summary": "Six Scarlet & Violet—Black Bolt booster packs. Packaging, condition and availability require confirmation.",
+    "source_url": "https://cardnest-tcg.co.uk/product/cardnest-tcg-black-bolt-booster-bundle-6-factory-sealed-packs/",
+    "image_path": "/products/black-bolt-booster-bundle.png",
+    "status": "draft"
+  },
+  {
+    "slug": "30th-celebration-binder-collection",
+    "name": "Cardnest TCG-30th Celebration Binder Collection (Includes 9-Pocket Album & Booster Packs)",
+    "category": "Binder Collections",
+    "set_name": "30th Celebration",
+    "pack_count": 5,
+    "price_pence": 5500,
+    "compare_at_pence": 7500,
+    "summary": "A themed 9-pocket binder and five 30th Celebration booster packs. Exact retail contents, condition and availability require confirmation.",
+    "source_url": "https://cardnest-tcg.co.uk/product/cardnest-tcg-30th-celebration-binder-collection-includes-9-pocket-album-booster-packs/",
+    "image_path": "/products/30th-celebration-binder-collection.png",
+    "status": "draft"
+  }
+]
