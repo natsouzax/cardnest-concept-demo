@@ -129,6 +129,12 @@ test("header compacts smoothly and mobile navigation keeps the routes accessible
   await page.goto("/");
   const header = page.locator(".site-header");
   await expect(header).not.toHaveClass(/is-compact/);
+  const cartLabel = header.locator(".cart-label");
+  await expect
+    .poll(() =>
+      cartLabel.evaluate((element) => element.getBoundingClientRect().width),
+    )
+    .toBeGreaterThan(1);
   await expect(page.locator(".demo-banner")).toBeVisible();
   const bannerWidth = await page
     .locator(".demo-banner")
@@ -139,6 +145,11 @@ test("header compacts smoothly and mobile navigation keeps the routes accessible
   ).toHaveAttribute("href", "/shop");
   await page.evaluate(() => window.scrollTo(0, 50));
   await expect(header).toHaveClass(/is-compact/);
+  await expect
+    .poll(() =>
+      cartLabel.evaluate((element) => element.getBoundingClientRect().width),
+    )
+    .toBeLessThan(1);
   if (testInfo.project.name === "desktop") {
     await expect(
       page
@@ -150,6 +161,11 @@ test("header compacts smoothly and mobile navigation keeps the routes accessible
   await expect(header).toHaveClass(/is-compact/);
   await page.evaluate(() => window.scrollTo(0, 0));
   await expect(header).not.toHaveClass(/is-compact/);
+  await expect
+    .poll(() =>
+      cartLabel.evaluate((element) => element.getBoundingClientRect().width),
+    )
+    .toBeGreaterThan(1);
 
   await page.getByRole("button", { name: "Account information" }).click();
   await expect(
